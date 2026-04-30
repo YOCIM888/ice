@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>冰封王国 · 霜落村</title>
+  <link rel="stylesheet" href="../asset/style/village.css">
+</head>
+<body>
+<div class="village-container">
+  
+  <!-- 左上角：头像 + 玩家信息卡片 -->
+  <div class="top-left-corner">
+    <div class="avatar-wrapper" id="avatarBox">
+      <img id="playerAvatar" class="avatar-img" src="../image/main/平民头像.png" alt="头像">
+      <div class="avatar-border"></div>
+    </div>
+    
+    <div class="player-info-panel">
+      <div class="class-level-row">
+        <span id="charClassDisplay" class="char-class">平民</span>
+        <span id="charLevelDisplay" class="char-level">Lv.1</span>
+      </div>
+      
+      <div class="exp-container">
+        <div class="exp-bar-bg">
+          <div id="expBarFill" class="exp-bar-fill" style="width: 0%;"></div>
+        </div>
+        <span id="expText" class="exp-text">0/100</span>
+      </div>
+      
+      <div class="currency-row">
+        <div class="currency-item">
+          <span class="currency-icon">💰</span>
+          <span id="goldAmount" class="currency-value">100</span>
+        </div>
+        <div class="currency-item">
+          <span class="currency-icon">💎</span>
+          <span id="diamondAmount" class="currency-value">5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 右上角竖排按钮：图鉴 / 商店 / 礼包 / 兑换 -->
+  <div class="right-vertical-buttons">
+    <button class="side-btn">📖 图鉴</button>
+    <button class="side-btn">🏪 商店</button>
+    <button class="side-btn">🎁 礼包</button>
+    <button class="side-btn">🔄 兑换</button>
+  </div>
+
+  <!-- 底部导航栏 7 个按钮（一行排布，战斗按钮稍大） -->
+  <div class="bottom-nav">
+    <button class="nav-btn">🎒 背包</button>
+    <button class="nav-btn">🐾 宠物</button>
+    <button class="nav-btn">🔮 符文</button>
+    <button class="nav-btn nav-btn-large">⚔️ 战斗</button>
+    <button class="nav-btn">📿 技能</button>
+    <button class="nav-btn">🌟 天赋</button>
+    <button class="nav-btn">🏆 挑战</button>
+  </div>
+
+  <div id="villageMessage" class="debug-message"></div>
+</div>
+
+<script src="../asset/script/village.js"></script>
+</body>
+</html>
